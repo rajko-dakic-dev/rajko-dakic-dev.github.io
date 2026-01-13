@@ -1,18 +1,110 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="sr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to my place</title>
+    <title>Moja GitHub Stranica</title>
+    <style>
+        /* Osnovni stilovi */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        /* Kontejner */
+        .container {
+            max-width: 600px;
+            text-align: center;
+            padding: 2rem;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        /* Profilna slika (opciono) */
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #007bff;
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            margin-bottom: 0.5rem;
+            color: #222;
+        }
+
+        p {
+            color: #666;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Dugmići i linkovi */
+        .links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            text-decoration: none;
+            padding: 10px 20px;
+            background: #007bff;
+            color: white;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background: #0056b3;
+        }
+
+        .btn-dark {
+            background: #333;
+        }
+
+        .btn-dark:hover {
+            background: #000;
+        }
+
+        footer {
+            margin-top: 2rem;
+            font-size: 0.8rem;
+            color: #888;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipis
-        icing elit. Sit, tota
-        m dignissimos! Laborum, labore 
-        consectetur magni eligendi voluptas mollitia molestiae explicabo suscipit 
-        modi dolor commodi blanditiis quos laboriosam accusantium nisi ab!
-    </p>
-    <h1>Hello</h1>
-    <h1>Hello</h1>
+
+    <div class="container">
+        <img src="https://via.placeholder.com/120" alt="Profilna slika" class="profile-img">
+        
+        <h1>Zdravo, ja sam Rajko 👋</h1>
+        <p>Dobrodošli na moju GitHub prezentaciju. Bavim se programiranjem i istraživanjem novih tehnologija.</p>
+        
+        <div class="links">
+            <a href="https://github.com/TVOJE-KORISNICKO-IME" class="btn btn-dark">GitHub</a>
+            <a href="mailto:tvoj@email.com" class="btn">Kontakt</a>
+            <a href="#" class="btn">Projekti</a>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2024 Kreirano pomoću HTML & CSS
+    </footer>
+
 </body>
 </html>
